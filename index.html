@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar cool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Logo</h4>
+        </div>
+
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="menu-togle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <script>
+        const h1 = document.querySelector('nav .menu-togle span:first-child')
+        h1.addEventListener('click', ()=>{
+            h1.classList.toggle('ubah1')
+        })
+        const h2 = document.querySelector('nav .menu-togle span:nth-child(2)')
+        h2.addEventListener('click', ()=>{
+            h2.classList.toggle('ubah2')
+        })
+        const h3 = document.querySelector('nav .menu-togle span:last-child')
+        h3.addEventListener('click', ()=>{
+            h3.classList.toggle('ubah3')
+        })
+    </script>
+</body>
+</html>
