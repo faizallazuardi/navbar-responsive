@@ -47,7 +47,8 @@ nav ul li a:hover {
 .menu-togle {
     display: none;
     flex-direction: column;
-    height: 2rem;
+    height: 1.6rem;
+    
     justify-content: space-between;
 }
 
@@ -74,13 +75,13 @@ nav ul li a:hover {
 
 
 .menu-togle span:first-child.ubah1{
-    transform: rotate(45deg) translate(-1px, 2px);
+    transform: rotate(45deg) translate(-1px, -2px);
 }
 .menu-togle span:nth-child(2).ubah2{
     transform: scale(0);
 }
 .menu-togle span:last-child.ubah3{
-    transform: rotate(-45deg) translate(-1px, -2px);
+    transform: rotate(-45deg) translate(-1px, 2px);
 }
 
 /* Responsive  Breakpoint*/
