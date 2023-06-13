@@ -30,17 +30,16 @@
     </nav>
 
     <script>
-        const h1 = document.querySelector('nav .menu-togle span:first-child')
-        h1.addEventListener('click', ()=>{
-            h1.classList.toggle('ubah1')
-        })
-        const h2 = document.querySelector('nav .menu-togle span:nth-child(2)')
-        h2.addEventListener('click', ()=>{
-            h2.classList.toggle('ubah2')
-        })
-        const h3 = document.querySelector('nav .menu-togle span:last-child')
-        h3.addEventListener('click', ()=>{
-            h3.classList.toggle('ubah3')
+        const btn = document.querySelector('nav .menu-togle')
+        const g1 = document.querySelector('nav .menu-togle span:first-child')
+        const g2 = document.querySelector('nav .menu-togle span:nth-child(2)')
+        const g3 = document.querySelector('nav .menu-togle span:last-child')
+        const slide = document.querySelector('nav ul')
+        btn.addEventListener('click', ()=>{
+            g1.classList.toggle('ubah1')
+            g2.classList.toggle('ubah2')
+            g3.classList.toggle('ubah3')
+            slide.classList.toggle('slide')
         })
     </script>
 </body>
