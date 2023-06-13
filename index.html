@@ -41,6 +41,14 @@
             g3.classList.toggle('ubah3')
             slide.classList.toggle('slide')
         })
+        document.addEventListener('click', function(e){
+            if (!btn.contains(e.target) && !slide.contains(e.target)){
+                g1.classList.remove('ubah1')
+                g2.classList.remove('ubah2')
+                g3.classList.remove('ubah3')
+                slide.classList.remove('slide')
+            }
+        })
     </script>
 </body>
 </html>
