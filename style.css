@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 .menu-togle span {
     display: block;
-    width: 2.7rem;
+    width: 2.4rem;
     height: .3rem;
     background-color: #fff;
     border-radius: .5rem;
@@ -74,13 +74,13 @@ nav ul li a:hover {
 
 
 .menu-togle span:first-child.ubah1{
-    transform: rotate(45deg) translate(-1px, 0px);
+    transform: rotate(45deg) translate(-1px, 2px);
 }
 .menu-togle span:nth-child(2).ubah2{
     transform: scale(0);
 }
 .menu-togle span:last-child.ubah3{
-    transform: rotate(-45deg) translate(-1px, 0px);
+    transform: rotate(-45deg) translate(-1px, -2px);
 }
 
 /* Responsive  Breakpoint*/
