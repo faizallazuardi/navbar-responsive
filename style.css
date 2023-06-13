@@ -45,7 +45,7 @@ nav ul li a:hover {
 /* Humburger menu */
 
 .menu-togle {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 2rem;
     justify-content: space-between;
@@ -95,6 +95,10 @@ nav ul li a:hover {
 
 /* Mobile */
 @media screen and (max-width: 576px) {
+    .menu-togle {
+        display: flex;
+    }
+
      nav ul {
         position: absolute;
         right: 0;
