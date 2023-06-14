@@ -15,11 +15,11 @@
 
 
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="2.html">About</a></li>
+            <li><a href="3.html">Product</a></li>
+            <li><a href="4.html">Service</a></li>
+            <li><a href="5.html">Contact</a></li>
         </ul>
 
         <div class="menu-togle">
@@ -29,7 +29,12 @@
         </div>
     </nav>
 
+    <h1 style="text-align: center; padding-top: 100px;">
+        halaman 1
+    </h1>
+
     <script>
+        // animasi navbar
         const btn = document.querySelector('nav .menu-togle')
         const g1 = document.querySelector('nav .menu-togle span:first-child')
         const g2 = document.querySelector('nav .menu-togle span:nth-child(2)')
@@ -49,6 +54,17 @@
                 slide.classList.remove('slide')
             }
         })
+        // akhir animasi
+
+        // indicator active navbar
+        const activePage = window.location.pathname;
+        const navLink = document.querySelectorAll('nav ul li a')
+        navLink.forEach(link=>{
+            if (link.href.includes(`${activePage}`)){
+                link.classList.add('indicator');
+                
+        }}
+        )
     </script>
 </body>
 </html>
